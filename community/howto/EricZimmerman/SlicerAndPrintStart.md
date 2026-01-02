@@ -227,7 +227,7 @@ And if we then tweak our PRINT_START to pull those values from the parameters, w
 gcode: 
     # Parameters
     {% set BED_TEMP = params.BED|float %}
-    {% set EXTRUDER_TEMP = params.EXTRUDER_TEMP|float %}
+    {% set EXTRUDER_TEMP = params.EXTRUDER|float %}
     
     {% set CHAMBER_TEMP = params.CHAMBER|float %}
     {% set MATERIAL = params.MATERIAL|string %}
